@@ -565,8 +565,12 @@
     <Compile Include="Assets\HoloToolkit\UX\Scripts\UICollection.cs" />
     <Compile Include="Assets\HoloToolkit\UX\Scripts\UsabilityScaler.cs" />
     <Compile Include="Assets\HoloToolkit\UX\Scripts\UsabilityUtilities.cs" />
+    <Compile Include="Assets\Scripts\GripHandler.cs" />
+    <Compile Include="Assets\Scripts\JointManager.cs" />
     <Compile Include="Assets\Scripts\JointRotator.cs" />
     <Compile Include="Assets\Scripts\JointSelectable.cs" />
+    <Compile Include="Assets\Scripts\KeyHandler.cs" />
+    <Compile Include="Assets\Scripts\Supporters.cs" />
     <None Include="Assets\HoloToolkit\Utilities\Scripts\GLTF\Shaders\GLTFConstant.cginc" />
     <None Include="Assets\HoloToolkit\Common\Shaders\Obsolete\UnlitConfigurable.shader" />
     <None Include="Assets\HoloToolkit\UX\Shaders\HUXButtonShader.shader" />
