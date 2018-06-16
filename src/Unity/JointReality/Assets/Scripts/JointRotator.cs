@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class JointRotator : JointSelectable
 {
@@ -10,15 +8,20 @@ public class JointRotator : JointSelectable
         Y,
         Z
     }
+    public enum RotationDirection
+    {
+        Forward,
+        Backward
+    }
 
-    //[SerializeField]
-    //private GameObject JointObject;
     [SerializeField]
     private GameObject ChildArmObject;
     [SerializeField]
-    private RotationAxis Axis;
+    private RotationAxis Axis = RotationAxis.X;
     [SerializeField]
-    private int Speed;
+    private int Speed = 5;
+    [SerializeField]
+    private RotationDirection Direction = RotationDirection.Forward;
 
     public bool IsRotating { get; set; }
 
@@ -39,16 +42,18 @@ public class JointRotator : JointSelectable
 
     private void Rotate()
     {
-        switch(Axis)
+        var direction = Direction == RotationDirection.Backward ? -1 : 1;
+
+        switch (Axis)
         {
             case RotationAxis.X:
-                ChildArmObject.transform.Rotate(Time.deltaTime * Speed, 0, 0);
+                ChildArmObject.transform.Rotate(direction * Time.deltaTime * Speed, 0, 0);
                 break;
             case RotationAxis.Y:
-                ChildArmObject.transform.Rotate(0, Time.deltaTime * Speed, 0);
+                ChildArmObject.transform.Rotate(0, direction * Time.deltaTime * Speed, 0);
                 break;
             case RotationAxis.Z:
-                ChildArmObject.transform.Rotate(0, 0, Time.deltaTime * Speed);
+                ChildArmObject.transform.Rotate(0, 0, direction * Time.deltaTime * Speed);
                 break;
         }
     }
