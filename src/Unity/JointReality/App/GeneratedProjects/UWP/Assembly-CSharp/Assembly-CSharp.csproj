@@ -5,7 +5,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{2aca9c13-62a6-4f9d-9fed-fa1fde6e8fa1}</ProjectGuid>
+    <ProjectGuid>{65455e55-ff19-44c9-ad18-bbfa40f4594e}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>AssemblyCSharpWSA</RootNamespace>
@@ -1883,11 +1883,23 @@
     <Compile Include="$(UnityProjectDir)Assets\HoloToolkit\UX\Scripts\UsabilityUtilities.cs">
       <Link>HoloToolkit\UX\Scripts\UsabilityUtilities.cs</Link>
     </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\Scripts\GripHandler.cs">
+      <Link>Scripts\GripHandler.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\Scripts\JointManager.cs">
+      <Link>Scripts\JointManager.cs</Link>
+    </Compile>
     <Compile Include="$(UnityProjectDir)Assets\Scripts\JointRotator.cs">
       <Link>Scripts\JointRotator.cs</Link>
     </Compile>
     <Compile Include="$(UnityProjectDir)Assets\Scripts\JointSelectable.cs">
       <Link>Scripts\JointSelectable.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\Scripts\KeyHandler.cs">
+      <Link>Scripts\KeyHandler.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\Scripts\Supporters.cs">
+      <Link>Scripts\Supporters.cs</Link>
     </Compile>
   </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">

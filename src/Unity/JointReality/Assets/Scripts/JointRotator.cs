@@ -36,7 +36,12 @@ public class JointRotator : JointSelectable
     {
         if (IsRotating)
         {
+            JointManager.Instance.StartSound();
             Rotate();
+        }
+        else
+        {
+            JointManager.Instance.StopSound();
         }
     }
 

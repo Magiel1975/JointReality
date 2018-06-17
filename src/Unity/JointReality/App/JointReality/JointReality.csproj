@@ -366,7 +366,7 @@
 
   <ItemGroup>
     <ProjectReference Include="C:\Repos\JointReality\src\Unity\JointReality\App\GeneratedProjects\UWP\Assembly-CSharp\Assembly-CSharp.csproj">
-      <Project>{2aca9c13-62a6-4f9d-9fed-fa1fde6e8fa1}</Project>
+      <Project>{d0ab8baa-7a5e-4eb7-86a2-0baf764846c4}</Project>
       <Name>Assembly-CSharp</Name>
       <Private>False</Private>
     </ProjectReference>

@@ -9,7 +9,7 @@ JointReality.sln: modified
 GeneratedProjects\UWP\Assembly-CSharp\project.json: 1D02BC64BAC0D041019673A1C4C51737
 JointReality\App.cs: 5BC0376C37E118FF3850BB87F1D1FE1F
 JointReality\AssemblyConverterArgs.txt: 174D75DCDB2D022CF26F77004B76364F
-JointReality\JointReality.csproj: 2B6B8D2E708FBBB5D5F2AEDFD3420EFC
+JointReality\JointReality.csproj: 152F8674BF8623F3491F698B9A08D737
 JointReality\JointReality.csproj.user: modified
 JointReality\Package.appxmanifest: 556A2305619D4B512CAC7EEC47437ABC
 JointReality\project.json: 1D02BC64BAC0D041019673A1C4C51737

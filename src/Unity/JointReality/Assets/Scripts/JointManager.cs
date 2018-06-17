@@ -18,7 +18,7 @@ public class JointManager : Singleton<JointManager> {
 	}
     public void StartSound()
     {
-        if (audio != null)
+        if (audio != null && !audio.isPlaying)
         {
             audio.Play();
         }
